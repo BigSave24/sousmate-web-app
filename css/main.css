@@ -19,6 +19,7 @@ body {
   color: #f5e6cc;
   color: #17e9e0;
   color: #ff6e13;
+  color: #dd8efc;
 }
 
 /* Header Section */
@@ -79,10 +80,56 @@ header #navbar li:hover {
 }
 
 #main .poster {
+  position: relative;
   width: 100%;
-  height: 80%;
+  height: 95%;
   background-image: url(/images/bbq-2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#main .poster h2 {
+  position: relative;
+  padding: 200px 0 0 50px;
+  width: 250px;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #ff6e13;
+}
+
+#main .poster span {
+  position: relative;
+  padding: 0 0 0 50px;
+  width: 250px;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 8px #ff6e13;
+}
+
+#main .poster p {
+  position: relative;
+  padding: 20px 0 0 50px;
+  width: 500px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 8px #a64ac9;
+}
+
+#main .poster .home-btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 50px 0 0 50px;
+  padding: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  /* color: #fff; */
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #cf6ef5;
+  border-radius: 5px;
+  /* text-shadow: 2px 2px 8px #ff6e13; */
 }
