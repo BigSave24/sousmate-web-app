@@ -133,3 +133,57 @@ header #navbar li:hover {
   border-radius: 5px;
   /* text-shadow: 2px 2px 8px #ff6e13; */
 }
+
+#features {
+  display: block;
+  height: 75vh;
+  text-align: center;
+}
+
+#features h2 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 50px 0 50px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+#features .feature-box {
+  display: inline-block;
+  width: 25%;
+  margin: 0 10px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* .feature-box div .fa {
+  display: block;
+  font-size: 2rem;
+  color: #a64ac9;
+  margin-bottom: 50px;
+} */
+
+.feature-box div img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  /* font-size: 2rem; */
+  /* color: #a64ac9; */
+  margin-bottom: 50px;
+}
+
+.feature-box h4 {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.feature-box p {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
