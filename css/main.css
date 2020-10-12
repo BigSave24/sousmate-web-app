@@ -187,3 +187,60 @@ header #navbar li:hover {
   font-size: 1rem;
   margin-bottom: 50px;
 }
+
+#scale {
+  display: block;
+  height: auto;
+}
+
+#scale .kitchen {
+  display: block;
+  position: relative;
+  height: 600px;
+  text-align: center;
+  background-color: #f5e6cc;
+}
+
+#scale .kitchen .kitchen-bg {
+  position: relative;
+  top: 20px;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  background-image: url(/images/kitchen-0.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* #scale .kitchen img {
+  width: 90%;
+  height: 90%;
+  margin: 30px 0 0;
+} */
+
+#scale .kitchen .kitchen-bg div {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 350px;
+  height: 350px;
+  color: #a64ac9;
+  opacity: 0.9;
+  background-color: #fff;
+}
+
+.kitchen .kitchen-bg div h3 {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding: 50px 50px 10px;
+}
+
+.kitchen .kitchen-bg div p {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 10px 50px;
+}
