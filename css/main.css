@@ -293,10 +293,109 @@ header #navbar li:hover {
   height: 40px;
   margin: 0 auto;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 #scale .mailing-list form input[type="submit"] {
   color: #000;
   font-weight: 600;
   background-color: #ff6e13;
+}
+
+/*      About Section      */
+/*      Contact Section      */
+/*      Recipes Section      */
+
+/*      Footer Section      */
+
+#footer {
+  height: 300px;
+  padding: 15px;
+  text-align: center;
+}
+
+#footer div {
+  display: inline-block;
+  width: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  margin: 50px 10px;
+  vertical-align: text-top;
+}
+
+#footer div h4 {
+  display: block;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 20px 0;
+  -webkit-text-stroke: 1px #a64ac9;
+  /* -webkit-text-stroke: 1px #a64ac9; */
+  /* text-shadow: 2px 2px 4px #ff6e13; */
+  text-transform: uppercase;
+}
+
+#footer div a {
+  text-decoration: none;
+}
+
+#footer div a span {
+  color: #ff6e13;
+  display: block;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+#footer-nav a span {
+  padding: 5px 0;
+}
+
+#social-media-nav a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  background-color: #ff6e13;
+  border-radius: 50%;
+}
+
+#social-media-nav a span {
+  padding: 1rem 1rem;
+}
+
+#social-media-nav a span .fa {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.facebook {
+  background-color: #3a5998 !important;
+}
+
+.instagram {
+  background-color: #bd977c !important;
+}
+
+.pintrest {
+  background-color: #cc2127 !important;
+}
+
+.twitter {
+  background-color: #55acee !important;
+}
+
+.youtube {
+  background-color: #ff0400 !important;
+}
+
+#footer-logo a {
+  width: 90%;
+  height: 100%;
+}
+
+#footer .copyrights {
+  color: #ff6e13;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
 }
