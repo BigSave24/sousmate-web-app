@@ -191,6 +191,7 @@ header #navbar li:hover {
 #scale {
   display: block;
   height: auto;
+  background-color: #f5e6cc;
 }
 
 #scale .kitchen {
@@ -243,4 +244,59 @@ header #navbar li:hover {
   font-size: 1.2rem;
   font-weight: 400;
   padding: 10px 50px;
+}
+
+#scale .mailing-list {
+  display: block;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 5px 100px;
+}
+
+#scale .mailing-list span {
+  font-size: 1.8rem;
+  font-weight: 100;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#scale .mailing-list h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+#scale .mailing-list .email-list-divider {
+  width: 50px;
+  border-top: 5px solid #a64ac9;
+  margin: 0 auto;
+}
+
+#scale .mailing-list p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 40px 0 0;
+}
+
+#scale .mailing-list form {
+  display: block;
+  margin-top: 15px;
+}
+
+#scale .mailing-list form input {
+  display: inline-block;
+  font-size: 1.1rem;
+  width: 175px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#scale .mailing-list form input[type="submit"] {
+  color: #000;
+  font-weight: 600;
+  background-color: #ff6e13;
 }
