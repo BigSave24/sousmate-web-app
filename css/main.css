@@ -345,7 +345,8 @@ header #navbar li:hover {
 
 #contact-info {
   height: auto;
-  min-height: 500px;
+  min-height: 600px;
+  background-color: #f5e6cc;
 }
 
 #contact-info .send-message {
