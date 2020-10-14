@@ -339,7 +339,73 @@ header #navbar li:hover {
   line-height: 1.5;
   padding: 5px 30px;
 }
+
 /*      Contact Section      */
+
+#contact-info {
+  height: auto;
+  min-height: 500px;
+}
+
+#contact-info .send-message {
+  width: 50%;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0 50px;
+}
+
+#contact-info .send-message span {
+  font-size: 1.8rem;
+  font-weight: 100;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#contact-info .send-message h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+#contact-info .send-message .msg-divider {
+  width: 50px;
+  border-top: 5px solid #a64ac9;
+  margin: 0 auto;
+}
+
+#contact-info .send-message p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 70px 0 50px;
+}
+
+#contact-info .send-message form input {
+  display: inline-block;
+  font-size: 1.1rem;
+  width: 170px;
+  height: 35px;
+  margin: 5px auto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#contact-info .send-message form input[type="submit"] {
+  display: inline-block;
+  color: #000;
+  font-weight: 600;
+  background-color: #ff6e13;
+}
+
+#contact-info .send-message form textarea {
+  display: inline-block;
+  color: #000;
+  width: 345px;
+  margin: 10px 180px 0 0;
+  padding: 5px;
+}
 
 /*      Recipes Section      */
 
