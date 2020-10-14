@@ -303,7 +303,44 @@ header #navbar li:hover {
 }
 
 /*      About Section      */
+
+#about-info {
+  height: auto;
+  min-height: 500px;
+}
+
+#about-info div {
+  width: 50%;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0 50px;
+}
+
+#about-info div h2 {
+  display: block;
+  font-size: 4rem;
+  font-weight: 300;
+  padding: 20px 0;
+}
+
+#about-info div h2 {
+  display: block;
+  font-size: 4rem;
+  font-weight: 100;
+  padding: 20px 0;
+}
+
+#about-info div p {
+  display: block;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 5px 30px;
+}
 /*      Contact Section      */
+
 /*      Recipes Section      */
 
 /*      Footer Section      */
