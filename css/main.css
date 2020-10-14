@@ -306,7 +306,8 @@ header #navbar li:hover {
 
 #about-info {
   height: auto;
-  min-height: 500px;
+  min-height: 600px;
+  background-color: #f5e6cc;
 }
 
 #about-info div {
