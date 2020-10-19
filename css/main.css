@@ -413,6 +413,123 @@ header #navbar li:hover {
 
 /*   #####   Recipes Section   #####   */
 
+#recipes-content {
+  display: block;
+  height: auto;
+  min-height: 600px;
+  background-color: #f5e6cc;
+}
+
+#recipes-content .recipes-container {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  /* background-color: lightblue; */
+}
+
+#recipes-content .recipes-container h2 {
+  display: block;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  padding: 50px 0 25px;
+}
+
+#recipes-content .recipes-container ol {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 25px;
+  text-transform: capitalize;
+}
+
+#recipes-content .recipes-container ol li a {
+  color: #cc2127;
+  text-decoration: none;
+}
+
+.recipe-card {
+  display: block;
+  position: relative;
+  color: #323232;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  padding: 50px;
+  margin-bottom: 20px;
+  background-color: #ffb48f;
+  -webkit-box-shadow: 0px 2px 4px 2px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 4px 2px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 4px 2px rgba(50, 50, 50, 0.75);
+}
+
+.recipe-card h4 {
+  display: inline-block;
+  width: 30%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0 0 10px;
+  text-transform: capitalize;
+}
+
+.recipe-card h4::nth-last-child(1) {
+  padding: 0 0;
+}
+
+.recipe-card span {
+  display: inline-block;
+  width: 30%;
+  font-size: 1rem;
+  padding: 0 0 10px;
+}
+
+.recipe-card .ingredients {
+  /* display: inline-block; */
+  position: absolute;
+  right: 0;
+  top: 50px;
+  /* float: right; */
+}
+
+.recipe-card .ingredients ol li {
+  font-size: 1rem;
+}
+.recipe-card ol {
+  display: block;
+  font-size: 1.3rem;
+  text-transform: none;
+}
+
+.recipe-card ol li {
+  max-width: 50%;
+  font-size: 1.1rem;
+  margin-left: 25px;
+  line-height: 1.7;
+}
+
+.recipe-card .timer-btn {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 90px;
+  height: 30px;
+  margin: 20px 0 0;
+  background-color: #a64ac9;
+  /* border-radius: 5px; */
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+
+.recipe-card .timer-btn:hover {
+  cursor: pointer;
+  color: #323232;
+  border-radius: 5px;
+  background-color: #dd8efc;
+  transition: all 0.5s ease-in-out;
+}
+
 /*   #####   Footer Section   #####   */
 
 #footer {
