@@ -10,6 +10,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- <script src="js/recipes.js" async defer></script> -->
   </head>
   <body>
     <header id="header">
@@ -38,105 +39,9 @@
     <section id="recipes-content">
       <div class="recipes-container">
         <h2>Recipes</h2>
-        <ol>
-          <li><a href="#bbq-chicken-recipe">Barbeque chicken</a></li>
-          <li><a href="#chocolate-pudding-recipe">Chocolate pudding</a></li>
-          <li><a href="#simple-salad-recipe">Simple salad</a></li>
-        </ol>
-        <div class="recipe-card">
-          <h4 id="bbq-chicken-recipe">Barbeque chicken</h4>
-          <br>
-          <span>Prep time: 20 minutes</span>
-          <br>
-          <span>Cook time: 30 minutes</span>
-          <br>
-          <div class="ingredients">
-            <h5>Ingredients</h5>
-            <ol>
-              <li>2 quarts water</li>
-              <li>I1 cup sugar</li>
-              <li>1sp salt</li>
-              <li>1/2 cup homemade bbq sauce</li>
-              <li>3 chicken breasts (boneless, skinless)</li>
-              <li>1 glove of garlic</li>
-              <li>1/2 tbsp of onion powder</li>
-              <li>1 chile (red)</li>
-            </ol>
-          </div>
-          <h4>Instructions:</h4>
-          <ol>
-            <li>Preheat the oven to 375 degress.</li>
-            <li>In a bowl mix all ingredients instead of chicken.</li>
-            <li>Season the chicken with salt and pepper.</li>
-            <li>Place the chicken breasts in a baking dish and place in the over. Cover.</li>
-            <li>Bake for 20 minutes or until the juices run clear</li>
-            <li>Pour over the sauce over the chicken.</li>
-            <li>Bake for another 5 minutes or until sauce thickens over the chicken.</li>
-            <li>Remove from the oven and serve with vegetables.</li>
-          </ol>
-          <button class="timer-btn">start timer</button>
-        </div>
-        <div class="recipe-card">
-          <h4 id="simple-salad-recipe">simple salad</h4>
-          <br>
-          <span>Prep time: 5 minute</span>
-          <br>
-          <span>Cook time: 0</span>
-          <br>
-          <div class="ingredients">
-            <h5>Ingredients</h5>
-            <ol>
-              <li>1 cup of lettuce</li>
-              <li>1 cup of baby spinach</li>
-              <li>1/2 cup of cherry tomatoes</li>
-              <li>1 cucumber</li>
-              <li>2 radishes</li>
-              <li>1 carrot (peeled)</li>
-              <li>2 tbsp of your favorite dressing</li>
-            </ol>
-          </div>
-          <h4>Instructions:</h4>
-          <ol>
-            <li>On a cutting board, slice the radishes and carrot</li>
-            <li>In a large bowl mix all ingredients.</li>
-            <li>Toss with a large spoon and fork.</li>
-            <li>Serve immediately or place in refrigerator.</li>
-          </ol>
-          <button class="timer-btn">start timer</button>
-        </div>
-        <div class="recipe-card">
-          <h4 id="chocolate-pudding-recipe">Chocolate pudding</h4>
-          <br>
-          <span>Prep time: 8 minutes</span>
-          <br>
-          <span>Cook time: 20 minutes</span>
-          <br>
-          <div class="ingredients">
-            <h5>Ingredients</h5>
-            <ol>
-              <li>1 cup of sugar</li>
-              <li>1 tsp of cinnamon</li>
-              <li>3 tbsp of cocoa chips, unsweetened</li>
-              <li>1/4 cup of cornstarch</li>
-              <li>pinch of salt</li>
-              <li>3 cups of milk</li>
-              <li>2 tbsp of butter</li>
-              <li>1 tsp of vanilla extract</li>
-            </ol>
-          </div>
-          <h4>Instructions:</h4>
-          <ol>
-            <li>In a large saucepan, stir together sugar, cocoa, cornstarch and salt.</li>
-            <li>Put saucepan on the stove and change the setting to medium-high heat.</li>
-            <li>Bring the mixture to a boil and cook until mixture thickens, stirring constantly.</li>
-            <li>Remove saucepan to a cool element and stir in butter and vanilla extract. Do NOT melt butter beforehand.</li>
-            <li>Let cool and serve warm.</li>
-            <li>Chill in refrigerator after done.</li>
-          </ol>
-          <button class="timer-btn">start timer</button>
-        </div>
-      </div>
-                                                                                                                                                                                      
+        <ol id="recipe-list-menu"></ol>
+        <div id="recipe-card-container"></div>
+      </div>                                                                                                                                                                                  
     </section>
     <footer id="footer">
       <div id="footer-nav">
@@ -162,6 +67,6 @@
       </div>
       <p class="copyrights">&copy; 2020. All rights reserved.</p>
     </footer>
-    <script src="" async defer></script>
+    <script src="js/recipes.js" async defer></script>
   </body>
 </html>
