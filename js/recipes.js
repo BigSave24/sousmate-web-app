@@ -1,6 +1,13 @@
 let recipeBook = [];
 let recipeMenu = document.getElementById('recipe-list-menu');
 let recipeCard = document.getElementById('recipe-card-container');
+let startTimerBtn = document.getElementsByClassName('timer-btn');
+let getHour = document.getElementById('hours');
+let getMinute = document.getElementById('minutes');
+let getSecond = document.getElementById('seconds');
+let count = 0;
+let currentMinute = 0;
+let currentHour = 0;
 
 
 //          Create Recipe Class
@@ -121,12 +128,16 @@ console.log(recipeBook);
 
 //          Create Recipe Page Menu and Cards
 function makeRecipeMenuAndCard() {
+
+    //      Create Recipe Menu List
     for (let i = 0; i < recipeBook.length; i++) {
         let tag = document.createElement("li");
         tag.innerHTML = '<a href="#' + recipeBook[i]['name'] + '-recipe">' + recipeBook[i]['name'] + '</a>';
         recipeMenu.appendChild(tag);
     };
 
+
+    //      Create Recipe Cards for Each Menu List Item
     for (let i = 0; i < recipeBook.length; i++) {
         let createDiv = document.createElement("div");
         createDiv.className = 'recipe-card';
@@ -142,8 +153,8 @@ function makeRecipeMenuAndCard() {
         '</div>'+
         '<h4>Instructions:</h4>'+
         '<ol id="' + recipeBook[i]['name'] + '-instructions"></ol>'+
-        '<button class="timer-btn">start timer</button>';
-    
+        '<button class="timer-btn" value="' + (recipeBook[i]['prepTime'] + recipeBook[i]['cookTime']) + '">start timer</button>';
+
         recipeCard.appendChild(createDiv);
     
         for (let x = 0; x < recipeBook[i]['ingredients'].length; x++) {
@@ -162,7 +173,76 @@ function makeRecipeMenuAndCard() {
 
 };
 
+
+//      Run makeRecipeMenuAndCard Function 
 makeRecipeMenuAndCard();
+
+
+//          Recipe Timer Function
+
+//          Apply Click Event Listener to Recipe Card Timer Buttons
+for (let i = 0; i < startTimerBtn.length; i++) {
+    startTimerBtn[i].addEventListener('click', startRecipeTimer);
+}
+
+
+//          Function to Start Selected Recipe Timer
+function startRecipeTimer(event) {
+    let displayTimer = document.getElementById('timer');
+    let closeTimerBtn = document.getElementById('closeTimer');
+    let totaltime = Number(event.target.value);
+    let interval = 0;
+
+    interval = setInterval(function(){counter(totaltime, interval)}, 1000);
+
+    //      Functions to Stop and Close Recipe Timer
+    function exitTimer() {
+        clearInterval(interval);
+        console.log('Stopping Timer...')
+        setTimeout(closeTimerDisplay, 3000);
+        getSecond.innerHTML = '00';
+        getMinute.innerHTML = '00';
+        getHour.innerHTML = '00';
+    };
+    
+    function closeTimerDisplay(){
+        displayTimer.style.visibility = 'hidden';
+        displayTimer.style.backgroundColor = '#a64ac9';
+    };
+
+
+    displayTimer.style.visibility = "visible";
+    closeTimerBtn.addEventListener('click', exitTimer);
+
+
+};
+
+
+//          Counter Function for Recipe Timer 
+function counter(recipeTime, interval){
+
+    if (recipeTime === currentMinute) {
+        document.getElementById('timer').style.backgroundColor = 'Red';
+        clearInterval(interval);
+    } else {
+        getSecond.innerHTML = (count < 10) ? '0' + count : count;
+
+        if (count === 60) {
+            count = 0;
+            getSecond.innerHTML = (count < 10) ? '0' + count : count;
+            getMinute.innerHTML = (++currentMinute < 10) ? '0' + currentMinute : currentMinute;
+
+            if (currentMinute == 60) {
+                currentMinute = 0;
+                getMinute.innerHTML = (currentMinute < 10) ? '0' + currentMinute : currentMinute;
+                getHour.innerHTML = (++currentHour < 10) ? '0' + currentHour : currentHour;
+            }
+
+        }
+
+        count++;
+    }
+};
 
 
 //          Recipe Categories
