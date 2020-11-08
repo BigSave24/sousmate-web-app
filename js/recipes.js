@@ -11,7 +11,7 @@ let currentHour = 0;
 
 
 //          Create Recipe Class
-function Recipe(id, name, category, synopsis, instructions, prepTime, cookTime, servings, level, ingredients, author, imagePath) {
+function Recipe(id, name, category, synopsis, instructions, prepTime, cookTime, servings, level, ingredients, author, imagePath, thumbnailPath) {
     this.id = id;
     this.name = name;
     this.category = category;
@@ -24,6 +24,7 @@ function Recipe(id, name, category, synopsis, instructions, prepTime, cookTime, 
     this.ingredients = ingredients; 
     this.author = author;
     this.imagePath = imagePath;
+    this.thumbnailPath = thumbnailPath;
   };
 
 
@@ -58,7 +59,8 @@ let bbqChicken = new Recipe(
         '1 Chile (Red)'
     ],
     'Leroy Washington',
-    'images/bbqchicken.png',
+    'images/bbqchicken.jpg',
+    'images/bbqchicken-00.png'
 );
 
 let simpleSalad = new Recipe(
@@ -87,6 +89,7 @@ let simpleSalad = new Recipe(
     ],
     'Alice Davis',
     'images/simplesalad.png',
+    'images/simplesalad-00.png'
 );
 
 let chocolatePudding = new Recipe(
@@ -118,6 +121,7 @@ let chocolatePudding = new Recipe(
     ],
     'Stacy Miller',
     'images/chocolatepudding.png',
+    'images/chocolatepudding-00.png'
 );
 
 
