@@ -85,7 +85,7 @@ header #navbar li:hover {
   position: relative;
   width: 100%;
   height: 95%;
-  background-image: url(/images/bbq-2.jpg);
+  background-image: url(/images/bbqchicken.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -210,7 +210,7 @@ header #navbar li:hover {
   width: 90%;
   height: 90%;
   margin: 0 auto;
-  background-image: url(/images/kitchen-0.jpg);
+  background-image: url(/images/kitchen.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -555,6 +555,124 @@ header #navbar li:hover {
   padding: 2px 5px;
   border-radius: 2px;
 }
+
+/*   #####   Featured Recipe Section   #####   */
+
+#featured-recipe {
+  position: relative;
+  display: block;
+  height: 80vh;
+  padding: 10px;
+  background-image: url(/images/light-wood-table-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#featured-recipe #recipe-thumbnail {
+  display: inline-block;
+  position: relative;
+  top: 90px;
+  left: 10px;
+  width: 60%;
+  height: 80%;
+  background-image: url(/images/bbq-97.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* #featured-recipe .recipe-thumbnail img {
+  /* display: inline-block;
+  width: 100%;
+  height: 100%; /
+  display: inline-block;
+  position: relative;
+  top: 150px;
+  left: 100px;
+  width: 70%;
+  height: 70%;
+} */
+
+#featured-recipe .recipe-info {
+  display: inline-block;
+  position: relative;
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
+  float: right;
+}
+
+#featured-recipe .recipe-info h2 {
+  position: relative;
+  padding: 50px 20px 0 50px;
+  width: 100%;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #ff6e13;
+}
+
+#featured-recipe .recipe-info p {
+  position: relative;
+  padding: 20px 0 0 50px;
+  width: 75%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 8px #a64ac9;
+}
+
+#featured-recipe .recipe-info .home-btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 50px 0 0 50px;
+  padding: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  /* ### color: #fff; ### */
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #cf6ef5;
+  border-radius: 5px;
+  /* ### text-shadow: 2px 2px 8px #ff6e13; ### */
+}
+
+/* #main .poster span {
+  position: relative;
+  padding: 0 0 0 50px;
+  width: 250px;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 8px #ff6e13;
+} */
+
+/* #main .poster p {
+  position: relative;
+  padding: 20px 0 0 50px;
+  width: 500px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 8px #a64ac9;
+} */
+
+/* #main .poster .home-btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 50px 0 0 50px;
+  padding: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  ### color: #fff; ###
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #cf6ef5;
+  border-radius: 5px;
+  ### text-shadow: 2px 2px 8px #ff6e13; ###
+*/
 
 /*   #####   Footer Section   #####   */
 
