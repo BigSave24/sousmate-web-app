@@ -74,6 +74,28 @@ header #navbar li:hover {
   transition: 0.3s ease-in-out;
 }
 
+header #menuBtn {
+  display: inline-block;
+  float: right;
+  color: #ff6e13;
+  font-size: 3rem;
+  font-weight: 600;
+  width: 85px;
+  height: 70px;
+  padding-bottom: 5px;
+  margin-right: 15px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header #menuBtn:hover {
+  color: #fff;
+  background-color: #ff6e13;
+  transition: 0.3s ease-in-out;
+}
+
 /*   #####   Index.html   #####   */
 
 #main {
