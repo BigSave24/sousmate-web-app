@@ -21,19 +21,27 @@
       <nav id="navbar">
         <ul>
           <a href="index.html">
-            <li>Home</li>
+            <li class="top-menu">Home</li>
           </a>
           <a href="recipes.html">
-            <li>Recipes</li>
+            <li class="top-menu">Recipes</li>
           </a>
           <a href="about.html">
-            <li>About</li>
+            <li class="top-menu">About</li>
           </a>
           <a href="contact.html">
-            <li>Contact Us</li>
+            <li class="top-menu">Contact Us</li>
           </a>
         </ul>
       </nav>
+      <div id="sideNav" class="side-menu">
+        <a href="javascript:void(0)" class="closeBtn">&times;</a>
+        <a class="side-menu-link" href="index.html">Home</a>
+        <a class="side-menu-link" href="recipes.html">Recipes</a>
+        <a class="side-menu-link" href="about.html">About</a>
+        <a class="side-menu-link" href="contact.html">Contact Us</a>
+      </div>
+      <button id="menuBtn">&#9776;</button>
     </header>
     <section id="recipes-content">
       <div class="recipes-container">
@@ -70,6 +78,7 @@
       </div>
       <p class="copyrights">&copy; 2020. All rights reserved.</p>
     </footer>
-    <script src="js/recipes.js" async defer></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/main.js" async defer></script>
   </body>
 </html>
