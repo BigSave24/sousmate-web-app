@@ -26,6 +26,7 @@ body {
 
 #header {
   display: block;
+  margin-left: 0;
   height: 70px;
   background-color: #fff;
 }
@@ -54,13 +55,13 @@ header #navbar {
   margin: 0;
 }
 
-header #navbar li {
+header #navbar .top-menu {
   display: inline-block;
   float: left;
   color: #ff6e13;
   font-size: 1.3rem;
   font-weight: 600;
-  width: 185px;
+  width: 175px;
   height: 70px;
   padding-top: 20px;
   text-align: center;
@@ -68,14 +69,52 @@ header #navbar li {
   border-right: 2px solid #919191;
 }
 
-header #navbar li:hover {
+header #navbar .top-menu:hover {
   color: #fff;
   background-color: #ff6e13;
   transition: 0.3s ease-in-out;
 }
 
+.side-menu {
+  height: 50%;
+  width: 0; /* 200px */
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ff6e13;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  color: #fff;
+  background-color: #ff6e13;
+  transition: 0.3s ease-in-out;
+}
+
+.side-menu .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  padding-left: 10px;
+  margin-left: 50px;
+}
+
 header #menuBtn {
-  display: inline-block;
+  display: none;
+  /* visibility: hidden; */
   float: right;
   color: #ff6e13;
   font-size: 3rem;
@@ -101,6 +140,7 @@ header #menuBtn:hover {
 #main {
   display: block;
   height: 100vh;
+  margin-left: 0;
 }
 
 #main .poster {
@@ -162,6 +202,7 @@ header #menuBtn:hover {
   display: block;
   height: 75vh;
   text-align: center;
+  margin-left: 0;
 }
 
 #features h2 {
@@ -216,6 +257,7 @@ header #menuBtn:hover {
   display: block;
   height: auto;
   background-color: #f5e6cc;
+  margin-left: 0;
 }
 
 #scale .kitchen {
@@ -440,6 +482,7 @@ header #menuBtn:hover {
   height: auto;
   min-height: 600px;
   background-color: #f5e6cc;
+  margin-left: 0;
 }
 
 #recipes-content .recipes-container {
@@ -589,6 +632,7 @@ header #menuBtn:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: 0;
 }
 
 #featured-recipe #recipe-thumbnail {
@@ -598,7 +642,7 @@ header #menuBtn:hover {
   left: 10px;
   width: 60%;
   height: 80%;
-  background-image: url(/images/bbq-97.png);
+  background-image: url();
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -702,6 +746,7 @@ header #menuBtn:hover {
   height: 300px;
   padding: 15px;
   text-align: center;
+  margin-left: 0;
 }
 
 #footer div {
@@ -802,4 +847,29 @@ header #menuBtn:hover {
   text-align: center;
   padding: 20px 0;
   text-transform: uppercase;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  header #navbar .top-menu {
+    width: 155px;
+  }
+} */
+
+@media only screen and (max-width: 900px) {
+  header #navbar {
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  header #menuBtn {
+    display: inline-block;
+    /* visibility: hidden; */
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 400px) {
 }
