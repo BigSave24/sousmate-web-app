@@ -9,6 +9,9 @@ let result;
 
 menuBtn.addEventListener('click', openSideMenu);
 
+
+// ### Functions to select random recipe ###
+
 function randomRecipe(maxNumRecipes){
     return Math.floor(Math.random() * Math.floor(maxNumRecipes));
 };
@@ -21,6 +24,8 @@ function getRecipe(){
     return recipeBook[selectRecipe];
 
 };
+
+// ### Function to open and close side menu ###
 
 function openSideMenu(){
     sideMenu.style.width = '200px';
@@ -35,8 +40,3 @@ function openSideMenu(){
 function closeSideMenu(){
     sideMenu.style.width = '0';
 };
-
-// console.log(result = randomRecipe(recipeBookLength));
-console.log(getRecipe());
-
-// recipeBtn.setAttribute('href', )
