@@ -868,8 +868,143 @@ header #menuBtn:hover {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  #recipes-content .recipes-container ol {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 5px;
+    text-transform: capitalize;
+  }
+
+  .recipe-card ol li {
+    max-width: 50%;
+    font-size: 0.9rem;
+  }
+
+  .recipe-card .ingredients ol li {
+    font-size: 0.9rem;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
+  #featured-recipe {
+    position: relative;
+    display: block;
+    height: 80vh;
+    padding: 10px;
+    background-image: url(/images/light-wood-table-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0;
+  }
+
+  #featured-recipe #recipe-thumbnail {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    z-index: 0;
+    opacity: 0.3;
+  }
+
+  #featured-recipe .recipe-info {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: auto;
+    max-height: 60%;
+    margin: auto;
+  }
+
+  #featured-recipe .recipe-info h2 {
+    font-size: 2.2rem;
+  }
+
+  #featured-recipe .recipe-info p {
+    width: 85%;
+  }
+
+  #featured-recipe .recipe-info .home-btn {
+    padding: 20px;
+  }
+
+  #recipe-list-menu li a {
+    font-size: 1rem;
+  }
+
+  .recipe-card {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  .recipe-card h4 {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px 0 5px;
+    text-align: center;
+  }
+
+  br {
+    display: none;
+  }
+
+  .recipe-card span {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0 0 5px;
+    text-align: center;
+  }
+
+  .recipe-card .ingredients {
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+    /* float: right; */
+  }
+
+  .recipe-card .ingredients h5 {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 0 10px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .recipe-card ol li {
+    max-width: 90%;
+  }
+
+  #recipes-content .recipes-container ol {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+
+  #recipes-content .recipes-container ol li {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .recipe-card .timer-btn {
+    font-size: 0.5rem;
+    width: 70px;
+    margin: 20px 40% 0;
+  }
 }
