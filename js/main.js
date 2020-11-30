@@ -20,7 +20,8 @@ function getRecipe(){
     let selectRecipe = randomRecipe(recipeBookLength);
     thumbnail.style.backgroundImage = "url('" + recipeBook[selectRecipe]['thumbnailPath'] + "')";
     recipeBtn.setAttribute('href', "recipes.html#" + recipeBook[selectRecipe]['name'] + "-recipe");
-    "recipes.html#bbq-chicken-recipe"
+    // "recipes.html#bbq-chicken-recipe"
+    console.log(recipeBook[selectRecipe]['name']);
     return recipeBook[selectRecipe];
 
 };
@@ -40,3 +41,5 @@ function openSideMenu(){
 function closeSideMenu(){
     sideMenu.style.width = '0';
 };
+
+getRecipe();
